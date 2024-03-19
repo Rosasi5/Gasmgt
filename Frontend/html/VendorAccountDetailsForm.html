@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Vendor Account Details form</title>
+    <link rel="stylesheet" href="\Frontend\css\gasmanagementsystem.css">
+    <script src="\Frontend\javascript\gasmanagementsystem.js" defer></script>
+</head>
+<body id="vendorFormBodyDiv">
+    <div id="vendorFormDiv">
+        <form>
+            <input class="forminput" type="text" placeholder="   First name"><br>
+            <br>
+            <input class="forminput" type="text" placeholder="   Last name"><br>
+            <br>
+            <input class="forminput" type="text" placeholder="   Email"><br>
+            <br>
+            <input class="forminput" type="text" placeholder="   Password"><br>
+            <br>
+            <input class="forminput" type="text" placeholder="   Phone number"><br>
+            <br>
+
+            <label class="profileimgLabel" for="profileImage">Profile Image:</label>
+            <input type="file" id="profileImageFormInput" placeholder="profile image" name="profileImage" accept="image/*"
+                onchange="previewImage(this)">
+            
+            <div class="profile-preview" id="profileImgPreview"></div>
+
+            <button type="submit" onclick="navigateToVendorHomePage(); return false;" onmouseover="changeSubmitFormButtonColor()"
+                onmouseout="restoreSubmitFormButtonColor()" id="createAccountButton">
+                <h2>Create Account</h2>
+            </button>
+        </form>
+    </div>
+
+    <script>
+        function previewImage(input) {
+            const preview = document.getElementById('profileImgPreview');
+            const file = input.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    preview.innerHTML = `<img src="${e.target.result}" alt="Profile Preview">`;
+                };
+
+                reader.readAsDataURL(file);
+            } else {
+                preview.innerHTML = '';
+            }
+        }
+    </script>
+</body>
+</html>

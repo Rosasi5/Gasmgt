@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Home Page</title>
+    <link rel="stylesheet" href="\Frontend\css\gasmanagementsystem.css">
+    <script src="\Frontend\javascript\gasmanagementsystem.js" defer></script>
+</head>
+<body id="vendorHomePageBody">
+    <h2 id="h1Profile">Gas Vendor Profile Information</h2>
+    <div id="lightBlueStripDiv">
+
+    </div>
+    <div id="vendorProfileInfoContainer">
+        <form id="vendorProfileForm">
+            <label for="gas-company"><h2>Gas Company:</h2></label>
+            <div class="underline" contenteditable="true" id="gas-company">Ochanda Gases</div>
+            <br>
+
+            <label for="location"><h2>Location:</h2></label>
+            <div class="underline" contenteditable="true" id="location">Muranga, Kiharu</div>
+            <br>
+
+            <label for="about-company"><h2>About your company:</h2></label>
+            <div class="underline" contenteditable="true" id="about-company">We offer timely gas deliveries</div>
+            <br>
+
+            <div class="profileSaveandEditButtons">
+                <button type="button" id="edit-btn" onclick="enableEditing()" onmouseover="changeEditBtnColor()"  onmouseout="restoreEditBtnColor()">Edit</button>
+                <button type="button" id="save-btn" onclick="saveProfile()" onmouseover="changeSaveBtnColor()"  onmouseout="restoreSaveBtnColor()">Save</button>
+            </div>
+        </form>
+
+        <button id="Go-to-orders-button" type="button"  onclick="navigateToVendorOrdersPage()" onmouseover="changeGoToOrdersBtnColor()" onmouseout="restoreGoToOrdersBtnColor()"  >
+            <h2>Go To Orders</h2>
+        </button>
+    </div>
+    <div id="circularPhotoContainer">
+
+    </div>
+</body>
+</html>

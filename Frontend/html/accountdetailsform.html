@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>account details</title>
+    <link rel="stylesheet" href="\Frontend\css\gasmanagementsystem.css">
+    <script src="\Frontend\javascript\gasmanagementsystem.js" defer></script>
+</head>
+<body>
+    <div id="formdiv">
+    <form action="/customer" method="post" class="accountformdetails" enctype="multipart/form-data">
+        <input id="firstNameInput" class="forminput" type="text" name="first_name"  placeholder="   First name"><br>
+        <br>
+        <input id="lastNameInput" class="forminput" type="text" name="last_name" placeholder="   Last name"><br>
+        <br>
+        <input id="emailInput" class="forminput"  type="text" name="email" placeholder="   Email"><br>
+        <br>
+        <input id="passwordInput" class="forminput" type="text" name="password" placeholder="   Password"><br>
+        <br>
+        <input id="phoneNumberInput" class="forminput" type="text" name="phone_number" placeholder="   Phone number"><br>
+        <br>
+        <!--<input id="profileImageFormInput" name="profile image" type="file" placeholder="Profile Image" accept="image/*"><br>
+        <br>-->
+
+        <label class="profileimgLabel" for="profileImage">Profile Image:</label>
+        <input type="file" id="profileImageFormInput" placeholder="profile image" name="profileImage" accept="image/*" onchange="previewImage(this)">
+
+        <div class="profile-preview" id="profileImgPreview"></div>
+
+        <button type="submit"  onmouseover="changeSubmitFormButtonColor()" onmouseout="restoreSubmitFormButtonColor()" id="createAccountButton" ><h2>Create Account</h2></button>   
+    </form>
+    </div>
+
+    <script>
+        function previewImage(input) {
+            const preview = document.getElementById('profileImgPreview');
+            const file = input.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    preview.innerHTML = `<img src="${e.target.result}" alt="Profile Preview">`;
+                };
+
+                reader.readAsDataURL(file);
+            } else {
+                preview.innerHTML = '';
+            }
+        }
+
+        document.getElementById("createAccountButton").addEventListener("click", function() {
+            //retrieve the input values from the user
+            const firstName = document.getElementById('firstNameInput').value;
+            const lastName = document.getElementById('lastNameInput').value;
+            const email = document.getElementById('emailInput').value;
+            const password = document.getElementById('passwordInput').value;
+            const phoneNumber = document.getElementById('phoneNumberInput').value;
+            const profileImage = document.getElementById('profileImageFormInput').files[0];
+
+            //construct JSON object with user input
+            /*const requestBody = {
+                first_name: firstName,
+                last_name: lastName,
+                email: email,
+                password: password,
+                phone_number: phoneNumber,
+                profile_image: profileImage
+            };*/
+
+console.log("iko sawa", firstName, lastName, email, password, phoneNumber, profileImage);
+
+            //construct FormData object with user input
+            const formData = new FormData();
+            formData.append('first_name', firstName);
+            formData.append('last_name', lastName);
+            formData.append('email', email);
+            formData.append('password', password);
+            formData.append('phone_number', phoneNumber);
+            formData.append('profile_image', profileImage);
+
+            //send JSON  data to server(fastAPI)
+            fetch('/customer', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                alert(data.message);
+            })
+            .catch(error => {
+                console.error('Error', error)
+            });
+        });
+
+        function navigateToVendorAccountDetailsform() {
+                window.location.href = "VendorAccountDetailsForm.html";
+            }
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signing in page</title>
+    <link rel="stylesheet" href="\Frontend\css\gasmanagementsystem.css">
+    <script src="\Frontend\javascript\gasmanagementsystem.js" defer></script>
+</head>
+<body>
+    <div class="customerandvendor">
+        <h3 id="signinastext">
+            Sign in as :
+        </h3>
+        <button onmouseover="changeCustomerButtonColor()" onmouseout="restoreCustomerButtonColor()" onclick="navigatetoaccountdetailsform()" id="customerbutton"  type="button">
+            <h1 id="h1Customer" >Customer</h1>
+        </button>
+        <p id="ortext2">or</p>
+        <button onmouseover="changeVendorButtonColor()" onmouseout="restoreVendorButtonColor()" onclick="navigateToVendorAccountDetailsform()"  id="gasvendorbutton" type="button">
+            <h1 id="h1GasVendor" >Gas Vendor</h1>
+        </button>
+    </div>
+</body>
+</html>

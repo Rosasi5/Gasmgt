@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Order Details</title>
+    <link rel="stylesheet" href="\Frontend\css\gasmanagementsystem.css">
+    <script src="\Frontend\javascript\gasmanagementsystem.js" defer></script>
+    <script src="\Frontend\javascript\vendorCustomerOrderDetails.js" defer></script>
+    <!--<script src="customerOrderStatus.js" defer></script>-->
+</head>
+<body class="ordersPageBody">
+    <div id="customerOrderDetailsContainer">
+        <div id="innerOrderDetailsHeaderStrip">
+            <h2 id="h2customerName">John Mbuvi</h2>
+
+        </div>
+        <div id="customerImageContainerCircle"><img src="/Frontend/take off.jpg" alt="customer image"></div>
+        <div id="theOrderDetails">
+            <i class="brandQuantityLocation"><strong>Brand:</strong></i>
+            <br><br>
+            <i class="brandQuantityLocation"><strong>Quantity:</strong></i>
+            <br><br>
+            <i class="brandQuantityLocation"><strong>Location:</strong></i>
+
+            <div id="orderData">
+                <p class="customerData"><strong>Pro Gas</strong></p>
+                <br>
+                <p class="customerData"><strong>13 kgs</strong></p>
+                <br>
+                <p class="customerData"><strong>Muranga County, Kiharu, Gitura - House No. 30</strong></p>
+                <button id="locationIcon" > Track location <i class='fas fa-search-location'></i></button>
+            </div>
+        </div>
+        <div id="paymentAmountContainerDiv">
+            <p>Please enter the amount to be paid</p>
+            <textarea id="amountToBePaidTextArea" placeholder="Enter the amount to be paid"> </textarea>
+            <!--<button onclick="goToCustomerMap()" id="amountSubmitBtn">Ok</button>-->
+            <button onclick="sendMessage()" id="amountSubmitBtn">Ok</button>
+        </div>
+        <button onclick="showPaymentContainer()" id="AcceptOrder" type="button"><strong>Accept</strong></button>
+        <button onclick="returnToOrderspage()" id="DeclineOrder" type="button"><strong>Decline</strong></button>
+    </div>
+    <!--<script>
+        function goToCustomerMap() {
+                //retrieve the entered amount
+                const enteredAmount = document.getElementById('amountToBePaidTextArea').value;
+
+                //send a message to the customer order status.html page
+                window.parent.postMessage({
+                    type: 'orderAccepted',
+                    amount: enteredAmount
+                }, 'http://127.0.0.1:5500');
+
+                 console.log('Message sent.');
+
+                //window.location.href = 'customerMapLocation.html';
+
+                // Remove the blur effect
+                document.body.classList.remove("blur");
+
+                // Optionally, you can add additional logic for the amountSubmitBtn here
+            }
+
+    </script>-->
+
+    <script>
+        function sendMessage() {
+            var message = "Hello from Sender Page!";
+            window.postMessage({ type: 'customEvent', message: message }, 'http://127.0.0.1:5500');
+            console.log("message imetumwa")
+        }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,1490 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.createaccountDiv {
+    padding: 400px;
+    padding-left: 700px;
+    background-image: url('/Frontend/gasimage17.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+}
+
+.gascylinderimage { /*created the image container first with a defined border*/
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-right: 430px;
+    margin-left: 200px;
+    border: solid; 
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.gascylinderimage img {/*set the properties of the image to be put in the above container*/ 
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#accountcreatebutton {
+    width: 550px;
+    height: 100px;
+    border: solid;
+    border-radius: 50px;
+    background-color: darkgoldenrod;
+}
+
+#h1CreateAccount {
+    font-size: 40px;
+}
+
+#ortext {
+    margin-left: 270px;
+}
+
+#logintext {
+    margin-left: 210px;
+    color: aqua;
+}
+
+.customerandvendor {
+    padding: 400px;
+    padding-left: 700px;
+    padding-top: 200px;
+    background-image: url('/Frontend/gasimage15.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#customerbutton {
+    width: 550px;
+    height: 100px;
+    border: solid;
+    border-radius: 50px;
+    margin-bottom: 100px;
+    background-color: burlywood;
+}
+
+#h1Customer {
+    font-size: 40px;
+}
+
+#h1GasVendor {
+    font-size: 40px;
+}
+
+#gasvendorbutton {
+    width: 550px;
+    height: 100px;
+    border: solid;
+    border-radius: 50px;
+    margin-top: 100px;
+    background-color: darkorange;
+}
+
+#ortext2 {
+    padding-left: 265px;
+}
+
+#signinastext {
+    color: white;
+}
+
+#formdiv {
+    background-image: url('/Frontend/gasimage18.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.accountformdetails {
+    padding: 350px;
+    padding-left: 850px;
+}
+
+.forminput {
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+#profileImageFormInput {
+    width: 300px;
+    height:50px;
+}
+
+.profileimgLabel {
+    color: white;
+}
+
+.profile-preview {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #9b9b9b;
+    margin-left: 300px;
+    margin-top: -100px;
+}
+
+.profile-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#createAccountButton {
+    position: absolute;
+    width: 500px;
+    height: 70px;
+    border-radius: 30px;
+    margin-left: -500px;
+    margin-top: 70px;
+    color: white;
+    background-color: #9999ff;
+}
+
+/*Cutomer home page styling................*/
+
+.customerHomePageAndOrderDetailsPageBody {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(to right, #0A6494,#C37B11 );
+    color: white;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+#needRefillDiv {
+    position: absolute;/*sets the position of the element in that it does not affect the positioning of other elements*/
+    margin: 150px;
+    margin-bottom: 600px;
+    width: fit-content;
+}
+
+#clickToRefillDiv {
+    position: absolute;/*sets the position of the element in that it does not affect the positioning of other elements*/
+    padding-left: 30px;
+    padding-right: 200px;
+    margin-left: 20px;
+    border-radius: 50px;
+    width: fit-content;
+}
+
+#clickHereToRefillBtnDiv {
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 400px;
+    margin-left: 100px;
+    border-radius: 50px;   
+}
+
+.homeContactAbout{
+    padding-left: 1300px;
+    color: white;
+}
+
+.homePageInfo {
+    padding-left: 100px;
+    float: left;
+    font-size: 20px;
+}
+
+.homePageGasImageDiv {/*define a container for the image*/
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 1200px;
+    width: 500px;
+    height: 500px;
+    border: solid;
+    border-radius: 250px;
+    overflow: hidden;
+    float: left;
+}
+
+.homePageGasImageDiv img {/*define the image dimensions to be put in the above container*/
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+
+/*Customer order details Styling..............*/
+
+
+.customerHomePageAndOrderDetailsPageBody {/*this is the format of the cutomer order details form page body*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(to right, #0A6494, #C37B11);
+}
+
+#h1GasOrderDetails {
+    font-size: 70px;
+    margin-left: 20px;
+    color: bisque;
+}
+
+.orderDetailsDiv {
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    padding: 150px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    padding-right: 500px;
+    margin-left: 50px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 30px;
+    background-color: rgba(83, 140, 224, 0.637);
+    background-blend-mode: color-burn ;
+}
+
+#homePageGasImageDiv {
+    /*define a container for the image*/
+    position: absolute;
+    margin-left: 1200px;
+    width: 500px;
+    height: 500px;
+    border: solid;
+    border-radius: 250px;
+    overflow: hidden;
+    float: left;
+    
+}
+
+#homePageGasImageDiv img {
+    /*define the image dimensions to be put in the above container*/
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.brandAndQuantityInputBox {
+    width: 300px;
+    height: 30px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+#locationTextarea {
+    border: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    resize: initial;
+    
+}
+
+#locationIcon {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 10px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 60px;
+}
+
+#locationImageIcon { /*define a container for the image icon*/
+    width: 30px;
+    height: 30px;
+    border: solid;
+    border-width: 0px;
+    overflow: hidden;
+    border-radius: 20px;
+    float: left;
+}
+
+#locationImageIcon img { /*define the image dimensions to be put in the above container*/
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#placeOrderBtn {
+    margin-top: 30px;
+    margin-left: 700px;
+    display: inline-block;
+    width: 160px;
+    height: 50px;
+    border: solid;
+    border-radius: 20px;
+    border-width: 2px;
+    color: white;
+    background-color: #9999ff ;
+}
+
+
+/*........Customer Order Status Styling...........*/
+
+
+/*#imageCircleDiv {
+    background-color: darkgray;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 50px;
+    margin: 200px;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+
+#customerOrderInfo {
+    position: absolute;
+    border: solid;
+    border-width: 0px;
+    border-radius: 0px;
+    border-color: black;
+    margin: 0px;
+    width: 100%;
+    margin-top: 280px;
+    padding: 400px;
+    padding-right:1500px ;
+    background-color: rgb(57, 91, 92);
+    z-index: 1;
+    background: radial-gradient(
+        ellipse at center,
+        white 5%,
+        rgb(57, 75, 92) 100%
+         );
+}
+
+#customerNameDiv {
+    position: absolute;
+    background-color: aqua;
+    z-index: 4;
+    margin-top: -410px;
+    margin-left: -20px;
+}
+
+#customerOrderInfoContainer {
+    position: absolute;
+    margin-left: -300px;
+    margin-top: -300px;
+    padding: 250px;
+    padding-right: 600px;
+    padding-bottom: 200px;
+    border-radius: 20px;
+    background-color:rgb(57, 77, 92) ;
+    z-index: 3;
+}
+
+#gasOrderBrandDisplay {
+    position: absolute;
+    background-color: darkgray;
+    padding: 20px;
+    padding-right: 610px;
+    margin-top: -200px;
+    margin-left: -250px;
+    color: black;
+}*/
+
+#OrderDetailsContainer {
+    width: 1300px;
+        height: 700px;
+        background-image: url('/Frontend/Gasimage21.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        position: absolute;
+        margin-left: 300px;
+        margin-top: 150px;
+}
+
+#innerOrderDetailsPurpleHeaderStrip {
+    width: 1300px;
+        height: 200px;
+        background-color: #2d1a47;
+        border-radius: 20px 20px 0px 0px;
+        z-index: 1;
+}
+
+#theCustomerImageContainerCircle {
+    position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: darkgray;
+        z-index: 2;
+        margin-top: -110px;
+        margin-left: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+}
+
+#theCustomerImageContainerCircle img {
+    width: 100%;
+        height: auto;
+        display: block;
+}
+
+#theOrderDetailsInfo {
+    width: 900px;
+        height: 300px;
+        background-color: #cacbcc;
+        margin-left: 160px;
+        margin-top: 100px;
+        opacity: 85%;
+        border-radius: 10px;
+        color: black;
+}
+
+#ordersData {
+    position: absolute;
+        display: block;
+        margin-top: -240px;
+        margin-left: 200px;
+        z-index: 4;
+}
+
+#customerName {
+    position: absolute;
+        margin: 140px 0px 0px 270px;
+        color: white;
+}
+
+#orderStatus {
+    position: absolute;
+    background-color: black;
+    z-index: 5;
+    padding: 100px;
+    margin-left: 1100px;
+    margin-top: -600px;
+    border-radius: 10px;
+
+}
+
+#acceptedStatus {
+    position: absolute;
+    background-color: rgb(116, 250, 176);
+    /*margin-top: 10px;*/
+    z-index: 6;
+    padding: 1px;
+    margin-left: -50px;
+    margin-top: -90px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: -10px;
+    padding-bottom: 2px;
+    border-radius: 40px;
+    color: rgb(11, 82, 2);
+}
+
+#pendingStatus {
+    position: absolute;
+    background-color:rgb(243, 227, 136);
+    z-index: 7;
+    margin-left: -50px;
+    margin-top: -25px;
+    padding-left: 20px;
+    width: 80px;
+    height: 50px;
+    border-radius: 40px;
+    color: rgb(131, 108, 5);
+}
+
+#deliveredStatus {
+    position: absolute;
+    background-color: rgb(247, 148, 148);
+    z-index: 8;
+    width: 80px;
+    height: 50px;
+    margin-left: -50px;
+    margin-top: 35px;
+    padding-left: 20px;
+    border-radius: 40px;
+    color: rgb(233, 7, 7);
+}
+
+#trackDeliveryButton {
+    position: absolute;
+    background-color: rgb(122, 156, 201);
+    margin-left: 1350px;
+    z-index: 9;
+    padding: 5px 40px 5px 40px;
+    border: none;
+    border-width: 2px;
+    border-radius: 50px;
+
+}
+
+#trackDeliveryButton:hover {
+    transform: scale(1.3);
+    color: white;
+}
+
+#paymentAmountContainerDiv {
+    position: absolute;
+    background-color: rgb(87, 85, 85);
+    width: 400px;
+    height: 200px;
+    margin-left: 400px;
+    margin-top: -280px;
+    border-radius: 30px;
+    display: none;
+}
+
+#amountToBePaidTextArea {
+    margin-top: 80px;
+    margin-left: 90px;
+    border-radius: 10px;
+    padding-top: 12px;
+}
+
+#paymentAmountContainerDiv p {
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 50px;
+    color: rgb(204, 202, 202);
+}
+
+#amountSubmitBtn {
+    position: absolute;
+    height: 47px;
+    width: 40px;
+    margin-top: 80px;
+    margin-left: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+/*.........Vendor Account Details Form Styling............*/
+
+#vendorFormBodyDiv {
+    background-image: url('/Frontend/gasimage15.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+#vendorFormDiv {
+    margin-left: 800px;
+    margin-top: 300px;
+}
+
+
+/*.........Vendor Home Page Styling............*/
+
+#vendorHomePageBody {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(to right, #0A6494, #665a48);
+}
+
+#h1Profile {
+    position: absolute;
+    font-size: 50px;
+    z-index: 1;
+    margin-left: 250px;
+    margin-top: 5px;
+
+}
+
+#lightBlueStripDiv {
+    position: absolute;
+    background-color: lightskyblue;
+    width: 100%;
+    height: 350px;
+}
+
+#vendorProfileInfoContainer {
+    position: absolute;
+    background-color: aliceblue;
+    width: 1000px;
+    height: 600px;
+    margin-top: 200px;
+    margin-left: 300px;
+    border-radius: 10px;
+}
+
+#circularPhotoContainer {
+    position: absolute;
+    background-color: #e4fcf9;
+    width: 150px;
+    height: 150px;
+    margin-top: 120px;
+    margin-left: 220px;
+    border-radius: 100px;
+    border: solid;
+    border-width: 1px;
+}
+
+#vendorProfileForm {
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+.underline {
+    border: none;
+    border-bottom: solid;
+    border-color: #cacbcc;
+    border-width: 2px;
+    padding: 5px;
+    margin-right: 500px;
+    margin-bottom: 15px;
+    max-height: 50px;
+    word-wrap: break-word;
+}
+
+.profileSaveandEditButtons {
+    display: flex;
+    margin-top: 40px;
+    
+}
+
+.profileSaveandEditButtons #save-btn {
+    margin-left: 700px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: gray;
+}
+
+.profileSaveandEditButtons #edit-btn {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: #cacbcc;
+}
+
+#Go-to-orders-button {
+    position: absolute;
+    margin-left: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 50px;
+    color: white;
+    background-color:black;
+    border: none;
+}
+
+#Go-to-orders-button:hover {
+    transform: scale3d(1.5);
+}
+
+
+/*............Vendor Orders Page Styling..................*/
+
+.ordersPageBody {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(to right, #0A6494, #665a48);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#h1GasOrders {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+#leftSideMenu {
+    position: absolute;
+    background-color: lightsteelblue;
+    width: 350px;
+    height: 800px;
+    border-radius: 10px;
+}
+
+#ordersContainer {
+    position: absolute;
+    background-color: lightsteelblue;
+    width: 1500px;
+    height: 800px;
+    margin-left: 352px;
+    border-radius: 10px;
+}
+
+.sideMenuButtons {
+    position: relative;
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 120px;
+    margin-left: 17px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: lightsteelblue;
+}
+
+.sideMenuButtons :hover {
+    background-color: #6b03fc;
+}
+
+#completedOrdersBtn {
+    padding-right: 104px;
+    padding-left: 101px;
+}
+
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}*/
+
+td img {
+    width: 36px;
+    height: 36px;
+    margin-right: 5rem;
+    border-radius: 50%;
+
+    vertical-align: middle;
+}
+
+/*#ordersPageBody {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+}*/
+
+
+main.table {
+    width: 82vw;
+    height: 90vh;
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: 0.4rem .8rem #0005;
+    border-radius: .8rem;
+
+    overflow: hidden;
+}
+
+section.table-header {
+    width: 100%;
+    height: 10%;
+    background-color: #fff4;
+    padding: .8rem .1rem;
+}
+
+.table-header h2 {
+    margin-left: 40px;
+}
+
+section.table-body {
+    width: 95%;
+    max-height: 700px;
+    background-color: #fffb;
+
+    margin: 2rem auto;
+    border-radius: .6rem;
+
+    overflow: auto;
+}
+
+.table-body  thead td {
+    padding: 10px;
+}
+
+.table-body::-webkit-scrollbar { /*styling the scroll bar*/
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table-body::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.table-body:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+table {
+    width: 100%;
+}
+
+table,th,td {
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+
+thead th {
+    position: sticky;/*to make the table headings remain in the same position*/
+    top: 0;
+    left: 0;
+    background-color: #8458ecfe;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+
+tbody tr:hover {
+    background-color: #fff6;
+}
+
+.status {
+    background-color: red;
+    padding:  .4rem .0;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.status.delivered {
+    background-color: #86e49d;
+    color: #006b21;
+}
+
+.status.cancelled {
+    background-color: #d893a3;
+    color: #b30021;
+}
+
+.status.pending {
+    background-color: #ebc474;
+    
+}
+
+@media (max-width: 1000px) { /*for a small screen size, it prevents the content from not getting squeezed against each other */
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+}
+
+
+/*.............Customer chosen by Vendor Order Details Page Styling........... */
+
+
+
+#customerOrderDetailsContainer {
+    width: 1300px;
+    height: 700px;
+    background-image: url('/Frontend/Gasimage21.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+/*#OrderDetailsContainer {
+    width: 1300px;
+        height: 700px;
+        background-image: url('Gasimage21.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+}*/
+
+#innerOrderDetailsHeaderStrip {
+    width: 1300px;
+    height: 200px;
+    background-color: #2d1a47;
+    border-radius: 20px 20px 0px 0px;
+    z-index: 1;
+}
+
+/*#innerOrderDetailsPurpleHeaderStrip {
+    width: 1300px;
+        height: 200px;
+        background-color: #2d1a47;
+        border-radius: 20px 20px 0px 0px;
+        z-index: 1;
+}*/
+
+#customerImageContainerCircle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: darkgray;
+    z-index: 2;
+    margin-top: -110px ;
+    margin-left: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#customerImageContainerCircle img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*#theCustomerImageContainerCircle {
+    position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: darkgray;
+        z-index: 2;
+        margin-top: -110px;
+        margin-left: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+}
+
+#theCustomerImageContainerCircle img {
+    width: 100%;
+        height: auto;
+        display: block;
+}*/
+
+#theOrderDetails {
+    width: 900px;
+    height: 300px;
+    background-color: #cacbcc;
+    margin-left: 160px;
+    margin-top: 100px;
+    opacity: 85%;
+    border-radius: 10px;
+}
+
+/*#theOrderDetailsInfo {
+    width: 900px;
+        height: 300px;
+        background-color: #cacbcc;
+        margin-left: 160px;
+        margin-top: 100px;
+        opacity: 85%;
+        border-radius: 10px;
+}*/
+
+.brandQuantityLocation {
+    display: flex;
+    
+    padding-left: 40px;
+    padding-top: 25px;
+    margin-top: 15px;
+    z-index: 3;
+}
+
+#orderData {
+    position: absolute;
+    display: block;
+    margin-top: -240px;
+    margin-left: 200px;
+    z-index: 4;
+}
+
+/*#ordersData {
+    position: absolute;
+        display: block;
+        margin-top: -240px;
+        margin-left: 200px;
+        z-index: 4;
+}*/
+
+.customerData {
+    padding: 16px;
+}
+
+#AcceptOrder {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 1000px;
+    padding: 20px 40px 20px 40px;
+    border-radius: 40px;
+    border: none;
+    color: rgb(17, 131, 32);
+}
+
+#AcceptOrder:hover {
+    transform: scale(1.3);
+    background-color: #93f1b1;
+}
+
+#DeclineOrder {
+    position: absolute;
+    padding: 20px 40px 20px 40px;
+    margin-top: 10px;
+    margin-left: 100px;
+    border-radius: 40px;
+    border: none;
+    color: red;
+}
+
+#DeclineOrder:hover {
+    transform: scale(1.3);
+    background-color: rgb(238, 153, 153);
+}
+
+#h2customerName {
+    position: absolute;
+    margin: 140px 0px 0px 270px;
+    color: white;
+}
+
+/*#customerName {
+    position: absolute;
+        margin: 140px 0px 0px 270px;
+        color: white;
+}*/
+
+#locationIcon {
+    font-size: 15px;
+    margin-top: -500px;
+    margin-left: 800px;
+
+}
+
+
+/*...........VENDOR PROFILE PAGE STYLING.................*/
+
+#vendorProfileBody{ 
+    /*background-color: rgba(210, 222, 233, 0.733);*/
+    background-image: url('/Frontend/Gasimage21.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#profileHeaderContainer{
+    position: relative;
+    height: 300px;
+    max-width: 1800px;
+    background-color: #C37B11;
+    margin-top: 10px;
+    margin-left: 55px;
+    z-index: 1;
+    
+}
+
+#vendorImageContainer {
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-top: 60px;
+    margin-left: 30px;
+    z-index: 2;
+}
+
+#inProfileOrdersInfoContainer {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 400px;
+    max-width: 900px;
+    margin-left: 55px;
+    margin-top: 50px;
+    border: solid 1px;
+    border-color: rgb(212, 212, 212);
+    border-radius: 30px;
+}
+
+#profileHeadersDiv {
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background-color: none;
+    margin-left: 300px;
+    margin-top: 40px;
+}
+
+#inProfileOrdersInfo {
+    position: relative;
+    height: 200px;
+    max-width: 300px;
+    margin-left: 50px;
+}
+
+#cstName {
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.order_details {
+    font-size: 20px;
+    padding: 10px;
+}
+
+#vName {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+#compName {
+    font-family: Verdana,
+        Geneva,
+        Tahoma,
+        sans-serif;
+    font-size: 40px;
+}
+
+/*.....vendor rating styling....*/
+
+#user_Rating_Div {
+    position: absolute;
+    height: 300px;
+    width: 700px;
+    margin-left: 1000px;
+    background-color: none;
+    margin-top: 70px;
+}
+
+.heading {
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+.fa {
+    font-size: 50px;
+    color: rgb(94, 92, 92);
+}
+
+.checked {
+    color: rgb(0, 0, 0);
+}
+
+/* Three column layout */
+.side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+}
+
+.middle {
+    margin-top: 10px;
+    float: left;
+    width: 70%;
+}
+
+/* Place text to the right */
+.right {
+    text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The bar container */
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+
+/* Individual bars */
+.bar-5 {
+    width: 60%;
+    height: 18px;
+    background-color: #04AA6D;
+}
+
+.bar-4 {
+    width: 30%;
+    height: 18px;
+    background-color: #2196F3;
+}
+
+.bar-3 {
+    width: 10%;
+    height: 18px;
+    background-color: #00bcd4;
+}
+
+.bar-2 {
+    width: 4%;
+    height: 18px;
+    background-color: #ff9800;
+}
+
+.bar-1 {
+    width: 15%;
+    height: 18px;
+    background-color: #f44336;
+}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+
+    .side,
+    .middle {
+        width: 100%;
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+/*.........VENDOR LOCATION Map styling.........*/
+
+#deliveryTrackBtn {
+    margin-top: 10px;
+    margin-left: 500px;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+}
+
+#deliveryTrackBtn:hover {
+    transform: scale(1.1);
+    background-color: rgb(131, 131, 168);
+    color: white;
+}
+
+#stopLocation {
+    position: absolute;
+    display: none;
+    margin-top: 180px;
+    margin-left: 980px;
+    width: 170px;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+}
+
+#stopLocation:hover {
+    transform: scale(1.2);
+    background-color: rgb(240, 212, 134);
+}
+
+/*#map {
+    margin-left: 950px;
+    margin-top: -300px;
+    position: absolute;
+    width: 800px;
+    height: 600px;
+        /*top: 50%;
+        /*left: 50%;
+        /*transform: translate(-50%, -50%);
+        /*width: 80%;
+        /* Adjust this percentage based on your layout */
+        /* Maintain aspect ratio */
+        /*max-width: 800px;
+        /* Limit maximum width if needed */
+        /*max-height: 400px;
+        z-index: 1;
+}*/
+
+/*#map iframe {
+    width: 100%;
+    height: auto;
+}*/
+
+/*.....CUSTOMER LOCATION MAP STYLING..........*/
+
+#mapBody {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#map {
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+#stopLocation {
+    position: absolute;
+        margin-top: -850px;
+        margin-left: 1400px;
+        width: 170px;
+        padding: 20px;
+        border-radius: 50px;
+        border: none;
+        background-color: coral;
+        opacity: 60%;
+}
+
+#mapCustomer {
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+#stopCustomerLocation {
+    position: absolute;
+    margin-top: -850px;
+    margin-left: 1400px;
+    width: 170px;
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: coral;
+    opacity: 60%;
+}
+
+#stopCustomerLocation:hover {
+    transform: scale(1.5);
+}
+
+                    /*...............CUSTOMER REVIEWS STYLING.........*/
+
+.reviewsContainerDiv {
+    width: 700px;
+    height: 500px;
+    background-color:  rgb(83, 80, 80);
+    margin-top: -400px;
+    margin-left: 1000px;
+    /*padding: 20px 0px 20px 0px;*/
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    transition: transform 0.5s ease-in-out;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 15px;
+}
+
+.reviewsContainerDiv::-webkit-scrollbar {
+    display: none;
+}
+
+.recordedCustomersReviews {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #0A6494;
+    padding-left: 20px;
+    padding-top: 10px;
+    z-index: 1;
+    border-radius: 0px;
+    /*display: flex;
+    flex-direction: column;
+    top: 0;
+    transition: transform 0.5s ease-in-out;
+    overflow-y: scroll; /*Updated to overflow-y for vertical scrolling */
+}
+
+#customerReview {
+    position: absolute;
+    width: 670px;
+    height: 250px;
+    background-color: rgb(129, 127, 127);
+    padding: 10px;
+    border-radius: 20px;
+    display: none;
+    z-index: 2;
+}
+
+#reviewCustomerImageContainer {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#writeReviewLink {
+    position: absolute;
+    margin-left: 1300px;
+    margin-top: 240px;
+    font-size: 20px;
+    color: #00e1ff;
+    
+}
+
+#writeReviewLink p {
+    animation-name: writereview;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes writereview {
+    from{color: #00e1ff;}
+    to{color: black;}
+}
+
+#writeReviewLink p:hover {
+    cursor: pointer;
+}
+
+.star {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.star:hover {
+    transition: color 0.2s;
+    color: gold;
+}
+
+#reviewTextarea {
+    width: 650px;
+    height: 40px;
+    background-color: rgb(129, 127, 127);
+    border: solid;
+    border-color: rgb(216, 213, 213);
+    color: white;
+    font-size: 20px;
+}
+
+#reviewTextarea placeholder-shown {
+    color: white;
+}
+
+#reviewSubmitBtn {
+    position: relative;
+    margin-left: 590px;
+    margin-top: 40px;
+    border: solid;
+    border-color: rgb(207, 205, 205);
+    background-color: rgb(83, 80, 80);
+    color: white;
+}
+
+#customerReview h2 {
+    position: absolute;
+    margin-left: 80px;
+    margin-top: -40px;
+    width: 200px;
+}
+
+
+
+.review {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.CustomersReviewsImagesContainer{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.customerReviewerName {
+    margin-left: 60px;
+    margin-top: -40px;
+}
+
+#recordedCustomersReviews p {
+    color: white;
+}

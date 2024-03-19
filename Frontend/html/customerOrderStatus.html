@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Order Status Page Tracking</title>
+    <link rel="stylesheet" href="\Frontend\css\gasmanagementsystem.css">
+    <script src="\Frontend\javascript\gasmanagementsystem.js" defer></script>
+    <!--<script src="\Frontend\javascript\customerOrderStatus.js" defer></script>-->
+</head>
+<body class="customerHomePageAndOrderDetailsPageBody" id="orderStatusBody">
+    <div class="homeContactAbout">
+        <p class="homePageInfo"><a href="customerHomePage.html">Home</a></p>
+        <p class="homePageInfo">Contact</p>
+        <p class="homePageInfo">About</p>
+    </div>
+
+    <div id="OrderDetailsContainer">
+        <div id="innerOrderDetailsPurpleHeaderStrip">
+            <h2 id="customerName">John Mbuvi</h2>
+    
+        </div>
+        <div id="theCustomerImageContainerCircle"><img src="/Frontend/take off.jpg" alt="customer image"></div>
+        <div id="theOrderDetailsInfo">
+            <i class="brandQuantityLocation"><strong>Brand:</strong></i>
+            <br><br>
+            <i class="brandQuantityLocation"><strong>Quantity:</strong></i>
+            <br><br>
+            <i class="brandQuantityLocation"><strong>Location:</strong></i>
+    
+            <div id="ordersData">
+                <p class="customerData"><strong>Pro Gas</strong></p>
+                <br>
+                <p class="customerData"><strong>13 kgs</strong></p>
+                <br>
+                <p class="customerData"><strong>Muranga County, Kiharu, Gitura - House No. 30</strong></p>
+                <!--<button id="locationIcon"> Track location <i class='fas fa-search-location'></i></button>-->
+            </div>
+        </div>
+
+    <!--<div id="imageCircleDiv">
+
+    </div>
+
+    <div id="customerOrderInfo">
+        <div id="customerNameDiv">
+            <h2>Customer name</h2>
+        </div>-->
+        <div id="orderStatus">
+            <div id="acceptedStatus"><p>Accepted</p></div>
+            <div id="pendingStatus"><p>Pending</p></div>
+            <div id="deliveredStatus"><p>Delivered</p></div>
+        </div>
+         
+        <button onclick="navigateToVendorProfilePage()" onmouseover="changetrackDeliveryButtonColor()" onmouseout="restoretrackDeliveryButtonColor()" id="trackDeliveryButton"><h2>Confirm Order</h2></button>
+        
+        <!--<div id="customerOrderInfoContainer">
+            <div id="gasOrderBrandDisplay">
+                <p><strong>This is the gas cylinder brand name</strong></p>
+                <br>
+                <p><strong>This is the Quantity of gas cylinder</strong></p>
+                <br>
+                <p><strong>This is the Customer location</strong></p>
+            </div>
+        </div>
+    </div>-->
+
+    <!--<script>
+        window.addEventListener('message', receiveMessage, false);
+
+            function receiveMessage(event) {
+                // Check the origin of the sender
+                console.log('Message received:', event.data);
+
+                if (event.origin !== 'http://127.0.0.1:5500') {
+                    return;
+                }
+
+                // Handle the message
+                if (event.data.type === 'orderAccepted') {
+                    const enteredAmount = event.data.amount;
+                    displayOrderAcceptedAlert(enteredAmount);
+                }
+            }
+
+            function displayOrderAcceptedAlert(enteredAmount) {
+                alert(`Your order has been accepted. Amount to be paid: ${enteredAmount}`);
+            }
+    </script>-->
+
+
+    <p id="messageDisplay"></p>
+    
+    <script>
+        window.addEventListener('message', receiveMessage, false);
+
+        function receiveMessage(event) {
+            if (event.data.type === 'customEvent') {
+                var message = event.data.message;
+                document.getElementById('messageDisplay').textContent = message;
+            }
+            console.log("nimepata message")
+        }
+    </script>
+</body>
+</html>

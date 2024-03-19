@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Profile information page</title>
+    <link rel="stylesheet" href="\Frontend\css\gasmanagementsystem.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="\Frontend\javascript\gasmanagementsystem.js" defer></script>
+</head>
+<body id="vendorProfileBody">
+    <div id="profileHeaderContainer">
+        <div id="user_Rating_Div">
+            <span class="heading">Rating</span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span><br>
+
+            <div class="row">
+                <div class="side">
+                    <div>5 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-5"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>150</div>
+                </div>
+                <div class="side">
+                    <div>4 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-4"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>63</div>
+                </div>
+                <div class="side">
+                    <div>3 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-3"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>15</div>
+                </div>
+                <div class="side">
+                    <div>2 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-2"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>6</div>
+                </div>
+                <div class="side">
+                    <div>1 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-1"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>20</div>
+                </div>
+            </div>
+        </div>
+        <div id="profileHeadersDiv">
+            <h2 class="profileHeaders" id="compName">Ochanda Gases</h2>
+            <p class="profileHeaders" id="vName"><strong>Wilberforce Shikuku</strong></p>
+            <p class="profileHeaders" id="phoneNo"><strong>+254 712345678</strong></p>
+            <p class="profileHeaders" id="title">Gas Vendor</p>
+        </div>
+
+        <div id="vendorImageContainer">
+
+        </div>
+
+        <div id="writeReviewLink">
+            <p><strong>Click to write a review.</strong></p>
+        </div>
+
+    </div>
+    <div id="inProfileOrdersInfoContainer">
+        <div id="inProfileOrdersInfo">
+            <p id="cstName">John Mbuvi</p>
+            <p class="order_details">Pro Gas</p>
+            <p class="order_details">13kgs</p>
+            <p class="order_details">Muranga, Mbiri, Linus</p>
+        </div>
+
+        <!--Display an iframe map-->
+
+        <button id="deliveryTrackBtn" onclick="goToVendorMapLocation()">
+            Track Delivery
+        </button>
+
+
+        
+            
+        </div>
+        
+        <div class="reviewsContainerDiv">
+
+            <div id="customerReview">
+                <div id="reviewCustomerImageContainer">
+
+                </div>
+                <h2>John Mbuvi</h2>
+                <div id="starRating" class="star-rating">
+                    <span class="star" data-rating="1">&#9733;</span>
+                    <span class="star" data-rating="2">&#9733;</span>
+                    <span class="star" data-rating="3">&#9733;</span>
+                    <span class="star" data-rating="4">&#9733;</span>
+                    <span class="star" data-rating="5">&#9733;</span>
+                </div>
+                <br>
+                <textarea id="reviewTextarea" placeholder="Write a review..."></textarea>
+                <button id="reviewSubmitBtn" onclick="addNewReview()">Submit</button>
+            </div>
+
+
+            <div class="recordedCustomersReviews">
+                <div class="CustomersReviewsImagesContainer"></div>
+                <h2 class="customerReviewerName">John Mbuvi</h2>
+                <div id="starRatings" class="star-ratings">
+                    <span class="stars" data-rating="1">&#9733;</span>
+                    <span class="stars" data-rating="2">&#9733;</span>
+                    <span class="stars" data-rating="3">&#9733;</span>
+                    <span class="stars" data-rating="4">&#9733;</span>
+                    <span class="stars" data-rating="5">&#9733;</span>
+                </div>
+                <hr>
+                <p>The service is good although a little late than expected</p>
+            </div>
+            <br>
+            <div class="recordedCustomersReviews">
+                <div class="CustomersReviewsImagesContainer"></div>
+                <h2 class="customerReviewerName">John Mbuvi</h2>
+                <div id="starRatings" class="star-ratings">
+                    <span class="stars" data-rating="1">&#9733;</span>
+                    <span class="stars" data-rating="2">&#9733;</span>
+                    <span class="stars" data-rating="3">&#9733;</span>
+                    <span class="stars" data-rating="4">&#9733;</span>
+                    <span class="stars" data-rating="5">&#9733;</span>
+                </div>
+                <hr>
+                <p>The service is good although a little late than expected</p>
+            </div>
+            <br>
+            <div class="recordedCustomersReviews">
+                <div class="CustomersReviewsImagesContainer"></div>
+                <h2 class="customerReviewerName">John Mbuvi</h2>
+                <div id="starRatings" class="star-ratings">
+                    <span class="stars" data-rating="1">&#9733;</span>
+                    <span class="stars" data-rating="2">&#9733;</span>
+                    <span class="stars" data-rating="3">&#9733;</span>
+                    <span class="stars" data-rating="4">&#9733;</span>
+                    <span class="stars" data-rating="5">&#9733;</span>
+                </div>
+                <hr>
+                <p>The service is good although a little late than expected</p>
+            </div>
+            <br>
+            <div class="recordedCustomersReviews">
+                <div class="CustomersReviewsImagesContainer"></div>
+                <h2 class="customerReviewerName">John Mbuvi</h2>
+                <div id="starRatings" class="star-ratings">
+                    <span class="stars" data-rating="1">&#9733;</span>
+                    <span class="stars" data-rating="2">&#9733;</span>
+                    <span class="stars" data-rating="3">&#9733;</span>
+                    <span class="stars" data-rating="4">&#9733;</span>
+                    <span class="stars" data-rating="5">&#9733;</span>
+                </div>
+                <hr>
+                <p>The service is good although a little late than expected</p>
+            </div>
+            <br>
+            <div class="recordedCustomersReviews">
+                <div class="CustomersReviewsImagesContainer"></div>
+                <h2 class="customerReviewerName">John Mbuvi</h2>
+                <div id="starRatings" class="star-ratings">
+                    <span class="stars" data-rating="1">&#9733;</span>
+                    <span class="stars" data-rating="2">&#9733;</span>
+                    <span class="stars" data-rating="3">&#9733;</span>
+                    <span class="stars" data-rating="4">&#9733;</span>
+                    <span class="stars" data-rating="5">&#9733;</span>
+                </div>
+                <hr>
+                <p>The service is good although a little late than expected</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const reviewsContainer = document.getElementById('recordedCustomersReviews');
+
+        // Sample reviews data
+        const reviewsData = [
+            { name: 'John Mbuvi', rating: 4, comment: 'The service is good although a little late than expected' },
+            { name: 'John Mbuvi', rating: 4, comment: 'The service is good although a little late than expected' },
+            { name: 'John Mbuvi', rating: 4, comment: 'The service is good although a little late than expected' },
+            { name: 'John Mbuvi', rating: 4, comment: 'The service is good although a little late than expected' },
+            { name: 'John Mbuvi', rating: 4, comment: 'The service is good although a little late than expected' },
+            { name: 'John Mbuvi', rating: 4, comment: 'The service is good although a little late than expected' },
+            // Add more reviews as needed
+        ];
+
+        // Function to initialize reviews
+        function initializeReviews() {
+            reviewsData.forEach(review => {
+                appendReview(review);
+            });
+        }
+
+        // Function to append a review
+        function appendReview(review) {
+            const reviewElement = document.createElement('div');
+            reviewElement.classList.add('review');
+            reviewElement.innerHTML = `
+                <h2>${review.name}</h2>
+                <div class="star-ratings">
+                    ${getStarsHTML(review.rating)}
+                </div>
+                <hr>
+                <p>${review.comment}</p>
+            `;
+            reviewsContainer.appendChild(reviewElement);
+        }
+
+        // Function to get star icons HTML based on rating
+        function getStarsHTML(rating) {
+            let starsHTML = '';
+            for (let i = 1; i <= 5; i++) {
+                const starClass = i <= rating ? 'filled' : 'empty';
+                starsHTML += `<span class="stars ${starClass}">&#9733;</span>`;
+            }
+            return starsHTML;
+        }
+
+        // Initialize reviews on page load
+        initializeReviews();
+
+        //Function to add a new review
+        function addNewReview() {
+                const newReview = {
+                    name: 'New Customer',
+                    rating: Math.floor(Math.random() * 5) + 1, // Random rating (1 to 5)
+                    comment: 'A new review has been added!'
+                };
+                appendReview(newReview);
+            }
+
+        // Simulate infinite scroll
+        setInterval(() => {
+            const firstReview = reviewsContainer.firstElementChild;
+            reviewsContainer.appendChild(firstReview.cloneNode(true));
+            reviewsContainer.style.transform = `translateY(-${firstReview.offsetHeight}px)`;
+            setTimeout(() => {
+                reviewsContainer.style.transform = 'translateY(0)';
+            }, 500);
+        }, 3000); // Change the interval as needed
+    </script>
+</body>
+</html>

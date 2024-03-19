@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Home Page</title>
+    <link rel="stylesheet" href="\Frontend\css\gasmanagementsystem.css">
+    <script src="\Frontend\javascript\gasmanagementsystem.js" defer></script>
+</head>
+<body class="customerHomePageAndOrderDetailsPageBody">
+    <div class="homeContactAbout">
+    <p class="homePageInfo"><a href="customerHomePage.html">Home</a></p>
+    <p class="homePageInfo">Contact</p>
+    <p class="homePageInfo">About</p>
+    </div>
+    <div id="needRefillDiv">
+    <h1>Need a gas refill?</h1>
+    </div>
+    <div id="clickToRefillDiv">
+        <button onclick="navigateToCustomerGasOrderDetails()" onmouseover="changeClickToRefillButtonColor()" onmouseout="restoreClickToRefillButtonColor()"  id="clickHereToRefillBtnDiv"  type="button"><h2>Click Here</h2></button>
+    </div>
+    <div class="homePageGasImageDiv">
+    <img src="/Frontend/Gas image 8.jpg" alt="Gas cylinder image" width="500" height="500">
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Order Details</title>
+    <link rel="stylesheet" href="\Frontend\css\gasmanagementsystem.css">
+    <script src="\Frontend\javascript\gasmanagementsystem.js" defer></script>
+</head>
+<body class="customerHomePageAndOrderDetailsPageBody">
+    <div class="homeContactAbout">
+        <p class="homePageInfo"><a href="customerHomePage.html">Home</a></p>
+        <p class="homePageInfo">Contact</p>
+        <p class="homePageInfo">About</p>
+    </div>
+    
+    <h1 id="h1GasOrderDetails">Enter your gas order details:</h1>
+
+    <div class="orderDetailsDiv">
+    <form>
+        <label for="gasCylinderBrand" class="forminput">Gas Cylinder Brand</label><br>
+        <input class="brandAndQuantityInputBox" list="gasCylinderBrandsList" id="gasCylinderBrand" name="gasCylinderBrand" class="forminput" required>
+        <datalist id="gasCylinderBrandsList">
+            <option value="Pro Gas">
+            <option value="Men Gas">
+            <option value="Free Gas">
+            <option value="K Gas">
+        </datalist>
+
+        <br><br>
+
+        <label for="quantity">Gas Cylinder Quantity/ Size (Kgs)</label><br>
+        <input class="brandAndQuantityInputBox" type="number" list="gasQuanitities" id="quantity" name="quantity" class="forminput" required>
+        <datalist id="gasQuantities">
+            <option value="3">
+            <option value="6">
+            <option value="13">
+        </datalist>
+
+        <br><br>
+
+        <label for="location">Delivery Location</label><br>
+        <textarea id="locationTextarea" name="location" required placeholder="Enter Your Delivery Address"></textarea>
+
+        <button id="locationIcon" type="button"><img id="locationImageIcon" src="locationicon4.png" alt="location icon image" width="30px" height="30px"></button>
+
+        <br><br>
+
+        <button onclick="navigateToCustomerOrderStatus()" onmouseover="changePlaceOrderBtnColor()" onmouseout="restorePlaceOrderBtnColor()"  type="submit" id="placeOrderBtn" value="Place Order">Place Order</button>
+    </form>
+    </div>
+    <div id="homePageGasImageDiv">
+    <img src="/Frontend/Gas image 8.jpg" alt="Gas cylinder image" width="500" height="500">
+    </div>
+</body>
+</html>
