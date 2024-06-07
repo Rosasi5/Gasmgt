@@ -2,6 +2,7 @@ from fastapi import APIRouter, Depends, UploadFile, File, Form
 from sqlalchemy.orm import Session
 from schemas import CustomerBase, CustomerDisplay
 from sqlitedatabase.database import get_db
+from fastapi.responses import JSONResponse
 #from sqlitedatabase.initialize_db import create_customer
 from sqlitedatabase.hash import Hash
 from sqlitedatabase import initialize_db
@@ -31,6 +32,9 @@ async def create_customer(
     profile_image: UploadFile = File(...),
     db: Session = Depends(get_db)
 ):
+    
+    print ("imecall server.......................................")
+
     # Absolute path to the uploads directory
     uploads_dir = os.path.abspath("uploads")
     os.makedirs(uploads_dir, exist_ok=True)  # Ensure the directory exists
@@ -55,4 +59,4 @@ async def create_customer(
     db.commit()
     db.refresh(new_customer)
 
-    return {"message": "Customer created successfully"}
+    return JSONResponse(content={"message": "Customer created successfully"})

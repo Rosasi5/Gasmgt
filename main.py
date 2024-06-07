@@ -7,9 +7,27 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi import Request
+from fastapi.middleware.cors import CORSMiddleware
 
 
 app = FastAPI()
+
+
+
+origins = ["http://127.0.0.1:8000",
+           "https://127.0.0.1:5500"]
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins = origins,
+    allow_credentials = True, 
+    allow_methods = ["*"],
+    allow_headers = ["*"]
+)
+
+
+
 
 #connect to css file directory
 app.mount("/static", StaticFiles(directory="Frontend/css"), name="static")

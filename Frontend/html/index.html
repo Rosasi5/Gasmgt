@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,33 +8,36 @@
     <link rel="stylesheet" href="\Frontend\css\gasmanagementsystem.css">
     <script src="\Frontend\javascript\gasmanagementsystem.js" defer></script>
 </head>
+
 <body>
     <div id="formdiv">
-    <form action="/customer/customer" onsubmit="createUser()"  method="POST" class="accountformdetails" enctype="multipart/form-data">
-        <input id="firstNameInput" class="forminput" type="text" name="first_name"  placeholder="   First name"><br>
-        <br>
-        <input id="lastNameInput" class="forminput" type="text" name="last_name" placeholder="   Last name"><br>
-        <br>
-        <input id="emailInput" class="forminput"  type="text" name="email" placeholder="   Email"><br>
-        <br>
-        <input id="passwordInput" class="forminput" type="text" name="password" placeholder="   Password"><br>
-        <br>
-        <input id="phoneNumberInput" class="forminput" type="text" name="phone_number" placeholder="   Phone number"><br>
-        <br>
-        <!--<input id="profileImageFormInput" name="profile image" type="file" placeholder="Profile Image" accept="image/*"><br>
+        <form action="" onsubmit="createUser()" method="post" class="accountformdetails" enctype="multipart/form-data">
+            <input id="firstNameInput" class="forminput" type="text" name="first_name" placeholder="   First name"><br>
+            <br>
+            <input id="lastNameInput" class="forminput" type="text" name="last_name" placeholder="   Last name"><br>
+            <br>
+            <input id="emailInput" class="forminput" type="text" name="email" placeholder="   Email"><br>
+            <br>
+            <input id="passwordInput" class="forminput" type="text" name="password" placeholder="   Password"><br>
+            <br>
+            <input id="phoneNumberInput" class="forminput" type="text" name="phone_number"
+                placeholder="   Phone number"><br>
+            <br>
+            <!--<input id="profileImageFormInput" name="profile image" type="file" placeholder="Profile Image" accept="image/*"><br>
         <br>-->
 
-        <label class="profileimgLabel" for="profileImage">Profile Image:</label>
-        <input type="file" id="profileImageFormInput" placeholder="profile image" name="profileImage" accept="image/*" onchange="previewImage(this)">
+            <label class="profileimgLabel" for="profileImage">Profile Image:</label>
+            <input type="file" id="profileImageFormInput" placeholder="profile image" name="profileImage"
+                accept="image/*" onchange="previewImage(this)">
 
-        <div class="profile-preview" id="profileImgPreview"></div>
+            <div class="profile-preview" id="profileImgPreview"></div>
 
-        <button type="submit" onclick="createUser()" onmouseover="changeSubmitFormButtonColor()" onmouseout="restoreSubmitFormButtonColor()"
-            id="createAccountBtn">
-            <h2>Create Account</h2>
-        </button>
+            <button type="submit" onclick="createUser()" onmouseover="changeSubmitFormButtonColor()"
+                onmouseout="restoreSubmitFormButtonColor()" id="createAccountBtn">
+                <h2>Create Account</h2>
+            </button>
 
-    </form>
+        </form>
     </div>
 
     <script>
@@ -54,7 +58,7 @@
             }
         }
 
-        
+
         function createUser() {
             //retrieve the input values from the user
             const firstName = document.getElementById('firstNameInput').value;
@@ -74,7 +78,7 @@
                 profile_image: profileImage
             };*/
 
-console.log("iko sawa", firstName, lastName, email, password, phoneNumber, profileImage);
+            console.log("iko sawa", firstName, lastName, email, password, phoneNumber, profileImage);
 
             //construct FormData object with user input
             const formData = new FormData();
@@ -87,27 +91,27 @@ console.log("iko sawa", firstName, lastName, email, password, phoneNumber, profi
 
             //send JSON  data to server(fastAPI)
             fetch('/customer/customer', {
-                method: 'POST',
+                method: 'post',
                 body: formData,
             })
-            .then(response => {
-                response.json(); 
+                .then(response => {
+                    response.json();
 
-            console.log(response.json());
+                    console.log(response.json());
 
-            })
-            .then(data => {
-                console.log(data);
+                })
+                .then(data => {
+                    console.log(data);
 
-                alert(data.message);
+                    alert(data.message);
 
-                //navigateToVendorAccountDetailsform();
+                    //navigateToVendorAccountDetailsform();
 
-                
-            })
-            .catch(error => {
-                console.error('Error', error)
-            });
+
+                })
+                .catch(error => {
+                    console.error('Error', error)
+                });
         };
 
         /*function navigateToVendorAccountDetailsform() {
@@ -115,6 +119,5 @@ console.log("iko sawa", firstName, lastName, email, password, phoneNumber, profi
             }*/
     </script>
 </body>
+
 </html>
-
-

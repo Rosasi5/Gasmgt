@@ -6,13 +6,13 @@ function navigatetoaccountdetailsform() {
     window.location.href = "accountdetailsform.html";
 }
 
-function navigateToCustomerHomePage() {
+/*function navigateToCustomerHomePage() {
     window.location.href = "customerHomePage.html";
-}
-
-/*function navigateToVendorAccountDetailsform() {
-    window.location.href = "VendorAccountDetailsForm.html";
 }*/
+
+function navigateToVendorAccountDetailsform() {
+    window.location.href = "VendorAccountDetailsForm.html";
+}
 
 function changeColor() {
     document.getElementById('accountcreatebutton').style.backgroundColor = 'white';
@@ -332,7 +332,7 @@ function returnToVendorCustomerOrderDetailsPage() {
 /*...........REVIEWS JAVASCRIPT...................... */
 
 
-    document.addEventListener("DOMContentLoaded", function(){
+    /*document.addEventListener("DOMContentLoaded", function(){
         const writeReviewLink = document.getElementById("writeReviewLink");
         const customerReview = document.getElementById("customerReview");
 
@@ -346,6 +346,6 @@ function returnToVendorCustomerOrderDetailsPage() {
             customerReview.style.display = 'none';
         }
 
-    })
+    })*/
 
 
